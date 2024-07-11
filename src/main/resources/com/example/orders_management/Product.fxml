@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orders_management.Presentation.Controller">
+    <children>
+        <Button fx:id="addProduct_btn" layoutX="14.0" layoutY="438.0" onAction="#onAddProductButton" prefHeight="47.0" prefWidth="178.0" style="-fx-background-color: #F1C40F;" text="Add Product" textFill="#873600">
+            <font>
+                <Font name="Book Antiqua Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="editProduct_btn" layoutX="405.0" layoutY="438.0" onAction="#onEditProductButton" prefHeight="47.0" prefWidth="178.0" style="-fx-background-color: #F1C40F;" text="Edit Product" textFill="#873600">
+            <font>
+                <Font name="Book Antiqua Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="deleteProduct_btn" layoutX="593.0" layoutY="438.0" onAction="#onDeleteProductButton" prefHeight="47.0" prefWidth="199.0" style="-fx-background-color: #F1C40F;" text="Delete Product" textFill="#873600">
+            <font>
+                <Font name="Book Antiqua Bold" size="24.0" />
+            </font>
+        </Button>
+        <AnchorPane prefHeight="47.0" prefWidth="807.0" style="-fx-background-color: #F1C40F;">
+            <children>
+                <Label fx:id="product_lbl" layoutX="28.0" layoutY="10.0" prefHeight="28.0" prefWidth="358.0" text="Products Details" textFill="#873600">
+                    <font>
+                        <Font name="High Tower Text" size="24.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane layoutY="501.0" prefHeight="31.0" prefWidth="807.0" style="-fx-background-color: #F1C40F;">
+            <children>
+                <Button fx:id="productBack_btn" layoutX="14.0" onAction="#onGoBackButton" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #F1C40F;" text="← Menu" textFill="WHITE">
+                    <font>
+                        <Font name="Book Antiqua Bold" size="24.0" />
+                    </font>
+                </Button>
+            <Label fx:id="productMessage_lbl" layoutX="439.0" layoutY="7.0" prefHeight="28.0" prefWidth="358.0" textFill="#873600">
+               <font>
+                  <Font name="High Tower Text" size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="productsTable" layoutX="25.0" layoutY="54.0" prefHeight="365.0" prefWidth="759.0">
+         <columns>
+            <TableColumn fx:id="idProductColum" prefWidth="143.199951171875" />
+            <TableColumn fx:id="nameProductColum" prefWidth="316.00006103515625" />
+            <TableColumn fx:id="priceProductColum" prefWidth="160.0" />
+            <TableColumn fx:id="stockProductColum" prefWidth="139.99993896484375" />
+         </columns></TableView>
+        <Button fx:id="viewProducts_btn" layoutX="202.0" layoutY="438.0" onAction="#onViewProductsButton" prefHeight="47.0" prefWidth="193.0" style="-fx-background-color: #F1C40F;" text="View Products" textFill="#873600">
+            <font>
+                <Font name="Book Antiqua Bold" size="24.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

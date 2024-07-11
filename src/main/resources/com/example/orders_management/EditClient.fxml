@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="548.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orders_management.Presentation.Controller">
+    <children>
+        <Button fx:id="modifyClient_btn" layoutX="273.0" layoutY="433.0" onAction="#onModifyClientButton" prefHeight="47.0" prefWidth="259.0" style="-fx-background-color: #F1C40F;" text="Modify Client" textFill="#873600">
+            <font>
+                <Font name="Book Antiqua Bold" size="24.0" />
+            </font>
+        </Button>
+        <AnchorPane prefHeight="47.0" prefWidth="807.0" style="-fx-background-color: #F1C40F;">
+            <children>
+                <Label fx:id="client_lbl" layoutX="28.0" layoutY="10.0" prefHeight="28.0" prefWidth="358.0" text="Edit Client" textFill="#873600">
+                    <font>
+                        <Font name="High Tower Text" size="24.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane layoutY="501.0" prefHeight="31.0" prefWidth="807.0" style="-fx-background-color: #F1C40F;">
+            <children>
+                <Button fx:id="clientBack_btn" layoutX="14.0" onAction="#onGoBackButton" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #F1C40F;" text="← Menu" textFill="WHITE">
+                    <font>
+                        <Font name="Book Antiqua Bold" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="clientNameEdit_txt" layoutX="438.0" layoutY="117.0" prefHeight="28.0" prefWidth="318.0">
+            <font>
+                <Font size="16.0" />
+            </font></TextField>
+        <Label fx:id="nameClientEdit_lbl" layoutX="25.0" layoutY="121.0" prefHeight="28.0" prefWidth="395.0" text="Client Name" textFill="#873600">
+            <font>
+                <Font name="High Tower Text" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="emailClientEdit_lbl" layoutX="25.0" layoutY="167.0" prefHeight="28.0" prefWidth="395.0" text="e-mail" textFill="#873600">
+            <font>
+                <Font name="High Tower Text" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="phoneClientEdit_lbl" layoutX="25.0" layoutY="215.0" prefHeight="28.0" prefWidth="395.0" text="Phone" textFill="#873600">
+            <font>
+                <Font name="High Tower Text" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="emailClientIEdit_txt" layoutX="438.0" layoutY="163.0" prefHeight="34.0" prefWidth="318.0">
+            <font>
+                <Font size="16.0" />
+            </font></TextField>
+        <TextField fx:id="phoneClientEdit_txt" layoutX="438.0" layoutY="211.0" prefHeight="34.0" prefWidth="318.0">
+            <font>
+                <Font size="16.0" />
+            </font></TextField>
+        <Label fx:id="editClientMessage_lbl" layoutX="238.0" layoutY="315.0" prefHeight="106.0" prefWidth="330.0" textFill="#873600">
+            <font>
+                <Font name="High Tower Text" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="addressClientEdit_lbl" layoutX="24.0" layoutY="264.0" prefHeight="28.0" prefWidth="395.0" text="Address" textFill="#873600">
+            <font>
+                <Font name="High Tower Text" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="addressClientIEdit_txt" layoutX="438.0" layoutY="260.0" prefHeight="34.0" prefWidth="318.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Label fx:id="idClientEdit_lbl" layoutX="24.0" layoutY="78.0" prefHeight="28.0" prefWidth="386.0" text="ID" textFill="#873600">
+            <font>
+                <Font name="High Tower Text" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="idClientEdit_txt" layoutX="438.0" layoutY="74.0" prefHeight="28.0" prefWidth="318.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>
