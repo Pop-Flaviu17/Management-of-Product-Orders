@@ -35,8 +35,6 @@ public class Application extends javafx.application.Application {
         stg.setWidth(newSize);
     }
     public static void main(String[] args) {
-        //ConnectionFactory db = new ConnectionFactory();
-        //Connection conn = ConnectionFactory.getConnection();//For testing
         launch();
     }
 }

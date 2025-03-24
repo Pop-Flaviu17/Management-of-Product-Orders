@@ -1,0 +1,7 @@
+module:com.example.pt2024_30422_pop_catalin_gabriel_flaviu_assignment_3
+com.example.orders_management
+com.example.orders_management.Business_Logic
+com.example.orders_management.Connection
+com.example.orders_management.Data_Access
+com.example.orders_management.Model
+com.example.orders_management.Presentation

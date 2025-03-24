@@ -7,13 +7,7 @@ public class Client {
     private String phone;
     private String address;
     public Client(){
-        /*
-        this.name = "ERROR";
-        this.email ="ERROR";
-        this.phone = "ERROR";
-        this.address = "ERROR";
-        this.idClient = -1;
-        */
+
     }
     public Client (Integer idClient, String name, String email, String phone, String address){
         this.name = name;
